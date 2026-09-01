@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260901-2">
+<link rel="stylesheet" href="styles.css?v=20260901-3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -86,7 +86,7 @@
 <!-- ГЕРОЙ -->
 <section class="hero" id="hero">
   <div class="hero-bg" aria-hidden="true">
-    <img src="assets/hero-kotelnaya-blur.webp" alt="" fetchpriority="high" decoding="async">
+    <img src="assets/hero-kotelnaya.webp" alt="" fetchpriority="high" decoding="async">
     <div class="hero-shade"></div>
     <div class="hero-grid"></div>
   </div>
@@ -107,14 +107,12 @@
         <a class="btn btn-ghost" href="#uslugi"><span data-i18n="hero_b2">Смотреть услуги</span></a>
       </div>
     </div>
-    <figure class="hero-shot rv d3">
-      <span class="hs-bar" aria-hidden="true"><i class="hs-r"></i><i class="hs-b"></i></span>
-      <img src="assets/master-teplopunkt-2.webp" alt="Мастер Astana Masters собирает тепловой пункт: коллекторы, запорная арматура, манометры" fetchpriority="high" decoding="async" width="612" height="754">
-      <figcaption class="hs-cap">
-        <span class="hs-ttl" data-i18n="hero_shot_t">Тепловой пункт под ключ</span>
-        <span class="hs-sub" data-i18n="hero_shot_s">сборка, обвязка, балансировка</span>
-      </figcaption>
-    </figure>
+    <div class="hero-flow" aria-hidden="true">
+      <div class="pipes">
+        <div class="pipe pipe-r"><span class="pipe-lbl" data-i18n="flow_supply">ПОДАЧА</span><i></i></div>
+        <div class="pipe pipe-b"><span class="pipe-lbl" data-i18n="flow_return">ОБРАТКА</span><i></i></div>
+      </div>
+    </div>
   </div>
   <div class="hero-foot" aria-hidden="true">
     <div class="wrap hf-in">
@@ -494,6 +492,6 @@
   </svg>
 </div>
 
-<script src="script.js?v=20260901-2"></script>
+<script src="script.js?v=20260901-3"></script>
 </body>
 </html>
