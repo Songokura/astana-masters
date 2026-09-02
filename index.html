@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260901-3">
+<link rel="stylesheet" href="styles.css?v=20260902-1">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -86,7 +86,10 @@
 <!-- ГЕРОЙ -->
 <section class="hero" id="hero">
   <div class="hero-bg" aria-hidden="true">
-    <img src="assets/hero-kotelnaya.webp" alt="" fetchpriority="high" decoding="async">
+    <picture>
+      <source media="(max-width:760px)" srcset="assets/hero-panorama-m.webp">
+      <img src="assets/hero-panorama.webp" alt="" fetchpriority="high" decoding="async">
+    </picture>
     <div class="hero-shade"></div>
     <div class="hero-grid"></div>
   </div>
@@ -232,7 +235,7 @@
 
     <div class="svc-grid">
       <article class="svc svc-tall rv" id="kotelnye">
-        <div class="svc-ph"><img src="assets/master-teplopunkt-1.webp" alt="Монтаж котельной и теплового пункта в Астане - красно-синие коллекторы" loading="lazy" decoding="async"></div>
+        <div class="svc-ph"><img src="assets/svc-kotelnye.webp" alt="Котельная под ключ в Астане: газовый котёл, гидрострелка, расширительный бак и насосные группы" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="s2t">Котельные и тепловые пункты</h3>
           <p data-i18n="s2d">Обвязка, автоматика, балансировка - под ключ.</p>
@@ -241,7 +244,7 @@
       </article>
 
       <article class="svc rv" id="otoplenie">
-        <div class="svc-ph"><img src="assets/work-kollektor-privody.webp" alt="Коллектор тёплого пола с сервоприводами - монтаж отопления" style="object-position:50% 32%" loading="lazy" decoding="async"></div>
+        <div class="svc-ph"><img src="assets/svc-otoplenie.webp" alt="Монтаж отопления по лазерному уровню: разводка труб и радиаторы" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="s1t">Отопление</h3>
           <p data-i18n="s1d">Радиаторы, тёплый пол, коллекторная разводка - монтаж и ремонт.</p>
@@ -250,7 +253,7 @@
       </article>
 
       <article class="svc rv d1" id="kotly">
-        <div class="svc-ph"><img src="assets/work-gazovyy-kotel.webp" alt="Настенный газовый котёл с аккуратной обвязкой" style="object-position:50% 30%" loading="lazy" decoding="async"></div>
+        <div class="svc-ph"><img src="assets/svc-kotly.webp" alt="Монтаж и обвязка настенного газового котла" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="s3t">Газовые и электрокотлы</h3>
           <p data-i18n="s3d">Подбор по мощности, монтаж, обвязка, запуск.</p>
@@ -259,7 +262,7 @@
       </article>
 
       <article class="svc rv" id="vodosnabzhenie">
-        <div class="svc-ph"><img src="assets/work-press-truba-ulitsa.webp" alt="Прокладка наружного водопровода пресс-инструментом" loading="lazy" decoding="async"></div>
+        <div class="svc-ph"><img src="assets/svc-vodosnabzhenie.webp" alt="Коллектор холодного и горячего водоснабжения на монтажном щите" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="s4t">ХВС и ГВС</h3>
           <p data-i18n="s4d">Разводка холодной и горячей воды в доме и на участке.</p>
@@ -268,7 +271,7 @@
       </article>
 
       <article class="svc rv d1" id="vodopodgotovka">
-        <div class="svc-ph"><img src="assets/work-filtry-vodopodgotovka.webp" alt="Система фильтрации и водоподготовки - колбы и разводка" loading="lazy" decoding="async"></div>
+        <div class="svc-ph"><img src="assets/svc-vodopodgotovka.webp" alt="Монтаж системы фильтрации холодной воды" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="s5t">Водоподготовка и фильтрация</h3>
           <p data-i18n="s5d">Фильтрация ХВС, умягчение - чистая вода без накипи.</p>
@@ -277,7 +280,7 @@
       </article>
 
       <article class="svc rv d2" id="nasosy">
-        <div class="svc-ph"><img src="assets/work-nasosnaya-stantsiya.webp" alt="Насосная станция водоснабжения с фильтром" style="object-position:50% 62%" loading="lazy" decoding="async"></div>
+        <div class="svc-ph"><img src="assets/svc-nasosy.webp" alt="Насосная станция водоснабжения с гидроаккумулятором и реле давления" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="s6t">Насосы и насосные станции</h3>
           <p data-i18n="s6d">Циркуляционные, частотные, станции водоснабжения.</p>
@@ -286,7 +289,7 @@
       </article>
 
       <article class="svc rv" id="boylery">
-        <div class="svc-ph"><img src="assets/work-dva-kotla.webp" alt="Котельная с двумя котлами и бойлером косвенного нагрева" style="object-position:50% 24%" loading="lazy" decoding="async"></div>
+        <div class="svc-ph"><img src="assets/svc-boylery.webp" alt="Установка и обвязка накопительного водонагревателя" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="s7t">Водонагреватели и БКН</h3>
           <p data-i18n="s7d">Бойлеры и бойлеры косвенного нагрева: подбор и обвязка.</p>
@@ -295,7 +298,7 @@
       </article>
 
       <article class="svc rv d1" id="bytovaya-tehnika">
-        <div class="svc-ph"><img src="assets/master-kotelnaya.webp" alt="Мастер подключает технику в котельной частного дома" style="object-position:50% 22%" loading="lazy" decoding="async"></div>
+        <div class="svc-ph"><img src="assets/svc-tehnika.webp" alt="Мастер подключает оборудование на объекте" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="s8t">Бытовая техника</h3>
           <p data-i18n="s8d">Подключение стиральных и посудомоечных машин, техники.</p>
@@ -304,7 +307,7 @@
       </article>
 
       <article class="svc rv d2" id="santehnika">
-        <div class="svc-ph"><img src="assets/work-smesitel-mramor.webp" alt="Чистовая сантехника - смеситель на мраморной стене" style="object-position:50% 12%" loading="lazy" decoding="async"></div>
+        <div class="svc-ph"><img src="assets/svc-santehnika.webp" alt="Чистовая сантехника: каменная раковина, смеситель и душевая на мраморе" loading="lazy" decoding="async"></div>
         <div class="svc-body">
           <h3 data-i18n="s9t">Чистовая сантехника</h3>
           <p data-i18n="s9d">Смесители, инсталляции, душевые системы - аккуратный монтаж.</p>
@@ -366,18 +369,18 @@
   </div>
   <div class="rail-wrap">
     <ul class="rail" id="rail">
-      <li class="card"><img src="assets/work-kotelnaya-kollektor.webp" alt="Распределительная гребёнка и насосные группы в котельной" loading="lazy" decoding="async"><span class="card-c" data-i18n="g1">Гребёнка и насосные группы</span></li>
-      <li class="card"><img src="assets/work-kotelnaya-baki.webp" alt="Котельная частного дома с коллектором и баками" loading="lazy" decoding="async"><span class="card-c" data-i18n="g2">Котельная частного дома</span></li>
-      <li class="card"><img src="assets/master-teplopunkt-2.webp" alt="Мастер собирает тепловой пункт" loading="lazy" decoding="async"><span class="card-c" data-i18n="g3">Сборка теплового пункта</span></li>
-      <li class="card"><img src="assets/work-kollektor-siniy.webp" alt="Синяя распределительная гребёнка водоснабжения" loading="lazy" decoding="async"><span class="card-c" data-i18n="g4">Коллектор водоснабжения</span></li>
-      <li class="card"><img src="assets/work-nasosnaya-gruppa.webp" alt="Насосная группа в латуни с сетчатым фильтром" loading="lazy" decoding="async"><span class="card-c" data-i18n="g5">Насосная группа</span></li>
-      <li class="card"><img src="assets/work-rasshiritelnyy-bak.webp" alt="Красный расширительный бак" loading="lazy" decoding="async"><span class="card-c" data-i18n="g6">Расширительный бак</span></li>
-      <li class="card"><img src="assets/work-gidroakkumulyator.webp" alt="Гидроаккумулятор большого объёма" loading="lazy" decoding="async"><span class="card-c" data-i18n="g7">Гидроаккумулятор</span></li>
-      <li class="card"><img src="assets/work-nasos-filtr.webp" alt="Циркуляционный насос и фильтр" loading="lazy" decoding="async"><span class="card-c" data-i18n="g8">Насос и фильтрация</span></li>
-      <li class="card"><img src="assets/work-kotel-promyshlennyy.webp" alt="Промышленное котельное оборудование" loading="lazy" decoding="async"><span class="card-c" data-i18n="g9">Промышленный объект</span></li>
-      <li class="card"><img src="assets/work-kotelnaya-okno.webp" alt="Обвязка оборудования в помещении" loading="lazy" decoding="async"><span class="card-c" data-i18n="g10">Обвязка оборудования</span></li>
-      <li class="card"><img src="assets/work-press-fiting.webp" alt="Опрессовка фитинга гидравлическим прессом" loading="lazy" decoding="async"><span class="card-c" data-i18n="g11">Опрессовка фитинга</span></li>
-      <li class="card"><img src="assets/work-skrytyy-smesitel.webp" alt="Монтаж встроенного смесителя" loading="lazy" decoding="async"><span class="card-c" data-i18n="g12">Встроенный смеситель</span></li>
+      <li class="card"><img src="assets/g-konvektor-zakat.webp" alt="Внутрипольный конвектор у панорамного окна на высоком этаже" loading="lazy" decoding="async"><span class="card-c" data-i18n="g1">Конвекторы у панорамных окон</span></li>
+      <li class="card"><img src="assets/g-kollektor-tp.webp" alt="Латунный коллектор тёплого пола с расходомерами" loading="lazy" decoding="async"><span class="card-c" data-i18n="g2">Коллектор тёплого пола</span></li>
+      <li class="card"><img src="assets/g-teplopunkt.webp" alt="Сборка теплового пункта: гидрострелка, коллектор, насосы" loading="lazy" decoding="async"><span class="card-c" data-i18n="g3">Сборка теплового пункта</span></li>
+      <li class="card"><img src="assets/g-dizayn-radiator.webp" alt="Вертикальный дизайн-радиатор, установка по лазерному уровню" loading="lazy" decoding="async"><span class="card-c" data-i18n="g4">Дизайн-радиатор по лазеру</span></li>
+      <li class="card"><img src="assets/g-konvektor-okno.webp" alt="Монтаж внутрипольного конвектора у панорамного остекления" loading="lazy" decoding="async"><span class="card-c" data-i18n="g5">Внутрипольный конвектор</span></li>
+      <li class="card"><img src="assets/g-razvodka-pol.webp" alt="Разводка труб отопления в полу и подключение радиатора" loading="lazy" decoding="async"><span class="card-c" data-i18n="g6">Разводка отопления в полу</span></li>
+      <li class="card"><img src="assets/g-ustanovka-radiatora.webp" alt="Установка стального радиатора на кронштейны" loading="lazy" decoding="async"><span class="card-c" data-i18n="g7">Установка радиатора</span></li>
+      <li class="card"><img src="assets/g-installyatsiya.webp" alt="Инсталляция подвесного унитаза и коллектор санузла" loading="lazy" decoding="async"><span class="card-c" data-i18n="g8">Инсталляция и коллектор санузла</span></li>
+      <li class="card"><img src="assets/g-obvyazka-kotla.webp" alt="Замена обвязки котла в котельной" loading="lazy" decoding="async"><span class="card-c" data-i18n="g9">Замена обвязки котла</span></li>
+      <li class="card"><img src="assets/g-kotel-viessmann.webp" alt="Обвязка настенного котла Viessmann" loading="lazy" decoding="async"><span class="card-c" data-i18n="g10">Обвязка котла Viessmann</span></li>
+      <li class="card"><img src="assets/g-master-instrument.webp" alt="Мастер Astana Masters на объекте" loading="lazy" decoding="async"><span class="card-c" data-i18n="g11">Мастер на объекте</span></li>
+      <li class="card"><img src="assets/g-avtomatika.webp" alt="Комнатный термостат и датчик температуры" loading="lazy" decoding="async"><span class="card-c" data-i18n="g12">Комнатная автоматика</span></li>
       <li class="card card-ig">
         <a href="https://www.instagram.com/astana_masters/" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z M12 8.4a3.6 3.6 0 1 0 .1 0 M17.3 6.7 h.01"/></svg>
@@ -391,7 +394,7 @@
 
 <!-- ГАРАНТИЯ -->
 <section class="gar" id="garantiya">
-  <div class="gar-bg" aria-hidden="true"><img src="assets/bg-valves-dark.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="gar-bg" aria-hidden="true"><img src="assets/bg-teplopunkt-dark.webp" alt="" loading="lazy" decoding="async"></div>
   <div class="wrap gar-in">
     <p class="kick rv"><i class="k-r"></i><i class="k-b"></i><span data-i18n="gar_kick">ГАРАНТИЯ</span></p>
     <h2 class="h2 rv" data-i18n="gar_h2">Отвечаем за материал и за работу</h2>
@@ -492,6 +495,6 @@
   </svg>
 </div>
 
-<script src="script.js?v=20260901-3"></script>
+<script src="script.js?v=20260902-1"></script>
 </body>
 </html>
