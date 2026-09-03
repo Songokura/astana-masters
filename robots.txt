@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://songokura.github.io/astana-masters/sitemap.xml
+Sitemap: https://astana-masters.kz/sitemap.xml
