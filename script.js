@@ -336,14 +336,23 @@
       if (task) msg += '\n' + d.wa_task + ': ' + task;
       var done = document.getElementById('formDone');
       if (done) done.hidden = false;
+      /* Конверсия: отправка формы для потенциальных клиентов */
+      if (typeof gtag_report_lead_form === 'function') gtag_report_lead_form();
       window.open('https://wa.me/77052990300?text=' + encodeURIComponent(msg), '_blank', 'noopener');
     });
   }
 
-  /* ================= КЛИКИ TEL / WHATSAPP (для будущих конверсий) ================= */
+  /* ================= КЛИКИ TEL / WHATSAPP -> КОНВЕРСИИ GOOGLE ADS ================= */
+  /* tel: и wa.me не выгружают страницу (звонок и новая вкладка), поэтому навигацию
+     не блокируем - событие успевает уйти само. */
   document.addEventListener('click', function (e) {
-    var act = e.target.closest('[data-act]');
-    if (!act) return;
-    /* сюда Opus повесит gtag-события: act.getAttribute('data-act') = 'tel' | 'wa' */
+    var el = e.target && e.target.closest ? e.target.closest('[data-act]') : null;
+    if (!el) return;
+    var act = el.getAttribute('data-act');
+    if (act === 'tel' && typeof gtag_report_conversion === 'function') {
+      gtag_report_conversion();
+    } else if (act === 'wa' && typeof gtag_report_contact === 'function') {
+      gtag_report_contact();
+    }
   });
 })();

@@ -2,6 +2,45 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) - Google Ads AW-18427902045 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18427902045"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18427902045');
+
+  /* Конверсии вызываются по действию пользователя, а не при загрузке страницы. */
+  /* Интерактивные номера телефонов - клик по tel: */
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') { window.location = url; }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18427902045/DMX_CJno2O4cEN3wjdNE',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+    });
+    return false;
+  }
+  /* Отправка формы для потенциальных клиентов */
+  function gtag_report_lead_form() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18427902045/sa_HCPK05e4cEN3wjdNE',
+      'value': 1.0,
+      'currency': 'USD'
+    });
+  }
+  /* Контакт - переход в WhatsApp */
+  function gtag_report_contact() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18427902045/UIAWCN7x2O4cEN3wjdNE',
+      'value': 1.0,
+      'currency': 'USD'
+    });
+  }
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Инженерная сантехника в Астане - отопление, котельные, водоснабжение | ASTANA MASTERS</title>
 <meta name="description" content="Отопление, котельные и тепловые пункты, ХВС и ГВС, водоподготовка, насосы в Астане. Гидравлический и теплотехнический расчёт до монтажа, гарантия от 24 месяцев. WhatsApp +7 705 299 0300.">
@@ -24,7 +63,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260904-1">
+<link rel="stylesheet" href="styles.css?v=20260905-1">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -500,6 +539,6 @@
   </svg>
 </div>
 
-<script src="script.js?v=20260904-1"></script>
+<script src="script.js?v=20260905-1"></script>
 </body>
 </html>
